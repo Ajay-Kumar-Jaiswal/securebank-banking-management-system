@@ -43,7 +43,8 @@ Repository Layer
 SQLAlchemy
       ↓
 MySQL
-
+```
+```
 securebank/
 ├── backend/
 │   ├── alembic/
@@ -70,47 +71,67 @@ securebank/
 ## Setup
 
 ### Backend
+
+```bash
 cd backend
 python -m venv .venv
+```
 
-Windows:
+**Windows:**
+```powershell
 .\.venv\Scripts\Activate.ps1
+```
 
-Install dependencies:
+**Install dependencies:**
+```bash
 pip install -r requirements.txt
+```
 
 Create `.env` from `.env.example` and configure your MySQL credentials.
 
-Run migrations:
+**Run migrations:**
+```bash
 alembic upgrade head
+```
 
-Create an admin account:
+**Create an admin account:**
+```bash
 python -m app.scripts.create_admin
+```
 
-Start the backend:
+**Start the backend:**
+```bash
 uvicorn app.main:app --reload --port 8000
+```
 
-API: http://localhost:8000
+API: http://localhost:8000  
 Swagger: http://localhost:8000/docs
 
 ### Frontend
+
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 Frontend: http://localhost:5173
 
 ## Testing
 
-Run backend tests:
+**Run backend tests:**
+```bash
 cd backend
 python -m pytest -v
+```
 
-106 tests passing.
+**106 tests passing.**
 
-Build the frontend:
+**Build the frontend:**
+```bash
 cd frontend
 npm run build
+```
 
 ## Security
 
@@ -128,7 +149,8 @@ npm run build
 ## API Testing
 
 Postman collection:
-postman/Banking-Management-System.postman_collection.json
+
+`postman/Banking-Management-System.postman_collection.json`
 
 ## License
 
