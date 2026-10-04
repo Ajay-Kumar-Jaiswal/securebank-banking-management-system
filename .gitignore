@@ -1,0 +1,69 @@
+# ============================================================
+# SecureBank — Root .gitignore
+# ============================================================
+
+# Environment variables & secrets (CRITICAL: NEVER COMMIT)
+.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+
+# Explicitly keep example environment templates
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Local SQLite databases & test databases
+backend/banking.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Python Virtual Environments
+.venv/
+backend/.venv/
+venv/
+backend/venv/
+ENV/
+env/
+
+# Python cache & bytecode
+__pycache__/
+backend/__pycache__/
+backend/**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / Frontend artifacts
+node_modules/
+**/node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Log files
+*.log
+backend/*.log
+frontend/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.iml
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
