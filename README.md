@@ -104,9 +104,6 @@ python -m app.scripts.create_admin
 uvicorn app.main:app --reload --port 8000
 ```
 
-API: http://localhost:8000  
-Swagger: http://localhost:8000/docs
-
 ### Frontend
 
 ```bash
@@ -115,7 +112,6 @@ npm install
 npm run dev
 ```
 
-Frontend: http://localhost:5173
 
 ## Testing
 
